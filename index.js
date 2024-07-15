@@ -22,13 +22,13 @@ io.on('connection', (socket) => {
 		console.log('User disconnected');
 	});
 
-	socket.on('chat message', (msg) => {
+	socket.on('swise-test', (msg) => {
 		console.log('message: ' + msg);
 		io.emit('chat message', msg);
 	});
 });
 
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 25565;
 
 server.listen(PORT, () => {
 	console.log(`Server running on http://127.0.0.1:${PORT}`);
