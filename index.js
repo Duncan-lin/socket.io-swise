@@ -24,7 +24,7 @@ io.on('connection', (socket) => {
 
 	socket.on('swise-test', (msg) => {
 		console.log('message: ' + msg);
-		io.emit('chat message', msg);
+		io.emit('swise-test', msg);
 	});
 });
 

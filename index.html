@@ -19,6 +19,7 @@
         socket.on('swise-test', function(msg) {
             const item = document.createElement('li');
             item.textContent = msg;
+            console.log(msg)
             document.getElementById('messages').appendChild(item);
             window.scrollTo(0, document.body.scrollHeight);
         });
